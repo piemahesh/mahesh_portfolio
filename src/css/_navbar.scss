@@ -1,0 +1,52 @@
+#nav-bar {
+    height: 100vh;
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    z-index: 999;
+
+    #nav-btn {
+        height: 55px;
+        width: 55px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #8f8080;
+        margin-bottom: 10px;
+        background-color: #f2f3f5;
+
+        h3 {
+            display: none;
+            font-family: 'Marvel', sans-serif;
+            font-weight: 100;
+            position: relative;
+            left: -10px;
+            color: white;
+        }
+
+
+        &:hover {
+            width: 110px;
+            transition: all 0.3s;
+            background-color: #0563bb;
+            justify-content: flex-start;
+            color: white;
+
+            i {
+                margin: 20px;
+                transition: none;
+            }
+
+            h3 {
+                display: block;
+                margin-right: 15px;
+            }
+
+        }
+    }
+}

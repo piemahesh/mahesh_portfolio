@@ -1,0 +1,51 @@
+#copyright {
+    height: fit-content;
+    width: 100%;
+    // background-color: slateblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #b6dae768;
+    // margin-top: 60px;
+    padding: 35px;
+
+    h1 {
+        color: var(--default_color);
+        font-size: 1.5em;
+        font-family: var(--my_font);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 0.8em;
+        color:grey;
+        font-family: var(--my_font);
+    }
+    h3{
+        font-size: 1rem;
+        color:#696363c3;
+        font-weight: 300;
+        // margin-bottom: 30px;
+    }
+
+    #soc_link {
+        width: fit-content;
+        height: 30%;
+        display: flex;
+        // align-items: center;
+        gap: 40px;
+        margin-top: 5px;
+
+        i {
+            font-size: 2rem;
+            color: var(--org_color);
+
+            &:hover {
+                color: #79a8ced5;
+                transition: all 0.3s;
+            }
+        }
+    }
+}

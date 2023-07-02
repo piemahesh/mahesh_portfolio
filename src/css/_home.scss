@@ -1,0 +1,41 @@
+#my_container {
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+        color: var(--default_color);
+        font-size: 3em;
+        font-family: var(--my_font);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 2em;
+        color: var(--org_color);
+        font-family: var(--my_font);
+    }
+
+    #soc_link {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        i {
+            font-size: 1.5rem;
+            color: var(--default_color);
+
+            &:hover {
+                color: var(--org_color);
+                transition: all 0.3s;
+            }
+        }
+    }
+}

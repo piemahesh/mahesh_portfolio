@@ -1,0 +1,175 @@
+#contact {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+
+    #ab {
+        font-family: var(--my_font);
+        border-bottom: 3px solid lightgrey;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        margin-top: 20px;
+        // margin: auto;
+
+        &::after {
+            height: 100%;
+            content: "aft";
+            color: transparent;
+            top: 0.2px;
+            position: absolute;
+            border-bottom: 4px solid var(--org_color);
+
+        }
+    }
+
+    #send {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #info {
+            height: 100%;
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 15px;
+
+            #i_cont {
+                height: 30%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    height: 50px;
+                    width: 50px;
+                    background-color: lightblue;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    border-radius: 50%;
+                    color: var(--org_color);
+
+                    &:hover {
+                        color: white;
+                        background-color: var(--org_color);
+                        transition: all 0.5s;
+                    }
+                }
+
+                #text_con {
+                    height: 100%;
+                    width: 70%;
+                    display: flex;
+                    align-items: flex-start;
+                    padding-left: 15px;
+                    justify-content: center;
+                    flex-direction: column;
+                    font-family: var(--my_font);
+
+                    h2 {
+                        color: #504d4ded;
+                        margin-bottom: 5px;
+                        font-size: 1em;
+                    }
+
+                    h3 {
+                        color: #504d4dc2;
+                        font-size: 1em;
+                        letter-spacing: 0.5mm;
+                        font-weight: 200;
+                    }
+
+                }
+            }
+        }
+
+        #in_info {
+            height: 70%;
+            width: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+
+            #upper {
+                height: 100px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                #ur_name,
+                #ur_mail {
+                    height: 75%;
+                    width: 48%;
+                    border: 1.5px solid #8080803b;
+                    padding-inline: 20px;
+                    font-family: var(--my_font);
+                    font-size: 1.1em;
+                    outline: none;
+
+                }
+            }
+
+            #subject {
+                height: 70px;
+                width: 100%;
+                border: 1.5px solid #8080803b;
+                padding-inline: 20px;
+                font-family: var(--my_font);
+                font-size: 1.1em;
+                outline: none;
+            }
+
+            #message {
+                height: 200px;
+                width: 100%;
+                padding-inline: 20px;
+                border: 1.5px solid #8080803b;
+                font-family: var(--my_font);
+                font-size: 1.1em;
+                outline: none;
+                resize: none;
+            }
+        }
+
+    }
+
+    button {
+        height: 50px;
+        width: 190px;
+        border-radius: 35px;
+        font-family: var(--my_font);
+        color: white;
+        font-size: 1rem;
+        background-color: var(--org_color);
+        outline: none;
+        border: none;
+        position: relative;
+        // bottom: -90px;
+        // z-index: 999;
+        cursor: pointer;
+        &:hover{
+            background-color: #6dbfdb;
+            transition: all 0.5s;
+        }
+    }
+}

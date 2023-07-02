@@ -1,0 +1,55 @@
+@import "_navbar.scss";
+@import "_home.scss";
+@import "_asset.scss";
+@import "_about.scss";
+@import "_skills.scss";
+@import "_resume.scss";
+@import "_portfolio.scss";
+@import "_contact.scss";
+@import "_copyright.scss";
+@import "_mediaQuery.scss";
+
+
+// .............
+* {
+    margin: 0;
+    box-sizing: border-box;
+   
+
+    ::selection {
+        color: steelblue;
+        background:#87cefa77;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--default_color);
+}
+
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/wolverine.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff68;
+    }
+}

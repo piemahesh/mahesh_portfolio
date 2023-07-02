@@ -1,0 +1,141 @@
+#resume {
+    height: 140vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+
+    #ab {
+        font-family: var(--my_font);
+        border-bottom: 3px solid lightgrey;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+
+        &::after {
+            height: 100%;
+            content: "aft";
+            color: transparent;
+            top: 0.2px;
+            position: absolute;
+            border-bottom: 4px solid var(--org_color);
+
+        }
+    }
+
+    #resume_para {
+        height: 15%;
+        width: 90%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-family: var(--default_color);
+        font-size: 1.2em;
+        line-height: 1.2;
+        padding-left: 40px;
+        color: #635e5e;
+        margin-top: 40px;
+    }
+
+    #card_container {
+        height: 70%;
+        width: 90%;
+        padding-left: 40px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #row1_card,
+        #row2_card {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            // padding: 50px;   
+
+
+            #cards {
+                height: 95%;
+                width: 45%;
+                border-radius: 20px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: auto;
+                flex-direction: column;
+                gap: 5px;
+                padding: 30px;
+                box-shadow: 2px 2px 3px black;
+                font-family: var(--default_color);
+                background-color: #ece6e634;
+
+                &:hover {
+                    box-shadow: 2px 2px 2px #847e7e;
+                }
+
+                p {
+                    font-weight: 300;
+                    line-height: 1.1;
+                }
+
+                h1 {
+                    color: #635e5e;
+
+                }
+
+                h3 {
+                    color: #635e5e;
+                    font-size: 1.4em;
+                }
+
+                h2 {
+                    color: var(--org_color);
+                }
+
+                i {
+                    margin-right: 5px;
+                    color: var(--org_color);
+                }
+
+                li {
+                    font-size: 1.2em;
+                    color: #635e5e;
+                }
+
+            }
+        }
+
+        #cen_ani {
+            height: 93%;
+            width: 2px;
+            background-color: var(--org_color);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            // flex-direction: column;
+            &::after {
+                content: " ";
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: 2px solid var(--org_color);
+                position: absolute;
+                top: -18px;
+            }
+        }
+    }
+}
